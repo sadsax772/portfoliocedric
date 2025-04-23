@@ -1,0 +1,390 @@
+/* General Body Styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.container {
+    width: 100%;
+    max-width: px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+  
+/* Landing Page Styles */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url('channel pictures/mainProfile.jpg') no-repeat center center;
+    background-size: 649px 1445px; /* Set the background size to 649px width and 1445px height */
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction: column;
+}
+
+.landing-page h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+  
+.landing-page h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+  
+.landing-page .get-started-btn {
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+  
+/* Home Section */
+.home-thumb {
+    position: relative;
+    height: 60vh;
+    background: url('channel pictures/background.jpg') no-repeat center center/cover;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+  
+.intro-heading {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+  
+.intro-subtext {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+  
+.intro-description {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+  
+.get-started-btn {
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+  
+/* Navbar Styles */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+  
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+  
+.navbar a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+  
+/* About Section */
+#about {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+  
+#about h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+  
+.about-img {
+    width: 0%;
+    max-width: 0px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+  
+/* Skills Section */
+#skills {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+  
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+  
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+  
+#skills li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+  
+/* Experience Section */
+#experience {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+  
+#experience h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+#experience .col-md-6 {
+    margin-bottom: 30px;
+}
+  
+/* Education Section */
+#education {
+    background-color: #fff;
+    padding: 60px 0;
+}
+  
+#education h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+#education .col-md-6 {
+    margin-bottom: 30px;
+}
+  
+/* Projects Section */
+#projects {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+  
+#projects h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.project-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin: 10px 0;
+    object-fit: contain;
+}
+  
+/* Hire Section */
+#hire {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+  
+#hire h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+  
+#hire ul {
+    list-style: none;
+    padding: 0;
+}
+  
+#hire li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+  
+#hire .section-btn {
+    padding: 0.7em 1.5em;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+  
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+  
+#contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+  
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+  
+.contact-form .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+  
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+  
+/* Social Links Section */
+#cv-socials {
+    background-color: #007bff;
+    padding: 20px 0;
+    text-align: center;
+}
+  
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+  
+.social-icon {
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+  
+.social-icon:hover {
+    color: #ffd700;
+}
+  
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+  
+footer p {
+    margin: 0;
+}
+  
+/* CV Download Button Styles */
+.cv-download-btn {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  background-color: #28a745; /* Green color to indicate download */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px; /* Add some space between sections */
+  transition: background-color 0.3s ease;
+}
+
+.cv-download-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.cv-download-btn:active {
+  background-color: #1e7e34; /* Even darker green when clicked */
+}
+
+/* Add a shadow to the button for depth */
+.cv-download-btn {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cv-download-btn:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+  
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .landing-page h1 {
+    font-size: 2.5em;
+  }
+  
+  .landing-page h2 {
+    font-size: 1.2em;
+  }
+  
+  .get-started-btn {
+    font-size: 0.9em;
+  }
+  
+  #home .intro-heading {
+    font-size: 2em;
+  }
+  
+  #home .intro-subtext {
+    font-size: 1.1em;
+  }
+  
+  #home .intro-description {
+    font-size: 1em;
+  }
+  
+  #about .col-md-6,
+  #experience .col-md-6,
+  #education .col-md-6 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .about-img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .project-image {
+    max-width: 100%;
+  }
+  
+  .contact-form .form-control {
+    font-size: 0.9em;
+  }
+  
+  .social-icon {
+    font-size: 1.5em;
+    margin: 0 10px;
+  }
+}

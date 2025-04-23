@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cedrick Moloko Sepaela - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    #main-content {
+      display: none;
+    }
+
+    .landing-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: white;
+      font-family: 'Source Sans Pro', sans-serif;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .landing-bg {
+      background-size: cover;
+      background-position: left ;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .landing-page h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      z-index: 1;
+    }
+
+    .landing-page h2 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      z-index: 1;
+    }
+
+    .landing-page .get-started-btn {
+      padding: 0.7em 1.5em;
+      font-size: 1em;
+      background-color: rgba(0, 123, 255, 0.8); /* Slight transparency to stand out */
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .navbar-nav li {
+      padding: 15px;
+    }
+
+    .navbar-nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .section-btn {
+      font-size: 1em;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      padding: 0.7em 1.5em;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Landing Page -->
+  <div class="landing-page" id="landing">
+    <div class="landing-bg" style="background-image: url('channel pictures/mainProfile.jpg');">
+      <h1>Cedrick Moloko Sepaela</h1>
+      <h2>Aspiring Software Engineer & NLP Specialist</h2>
+      <a href="#" class="get-started-btn" onclick="startSite()">Get Started</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Original Portfolio Content Starts Here -->
+    <nav class="custom-navbar navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#home">Cedrick Moloko Sepaela</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#hire">Hire Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="cv-download" class="cv-download text-center">
+        <div class="container">
+          <a href="curriculum vitae/Curriculum Vitae-Cedrick Sepaela.pdf" download class="btn btn-primary cv-btn">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </section>
+
+    <section id="home" class="home-thumb">
+      <div class="background-image" style="background-image: url('channel pictures/profile.jpg');"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="intro-heading">Cedrick .M. Sepaela</h1>
+            <h2 class="intro-subtext">Aspiring Software Developer | Designer</h2>
+            
+            <a href="#about" class="section-btn get-started-btn">Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>I am Cedrick Moloko Sepaela, a passionate Computer Science researcher currently pursuing my Master’s degree at the University of Limpopo. I hold an Honours degree in Computer Science and have a strong foundation in Software Engineering, Natural Language Processing (NLP), and Machine Learning.
+
+                My research focuses on text summarization for isiNdebele, an under-resourced language, which aligns with my deep interest in developing AI-driven solutions for linguistic diversity. I also have experience in software development, and quality assurance.
+                
+                I am always eager to collaborate on innovative projects that push the boundaries of technology while making a meaningful impact.
+                </p>
+
+
+                <p> Let's connect and build something great together!.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="about-img" style="background-image: url('channel pictures/profile.jpg');"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Programming Languages & Tools</h2>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>JavaScript / React / React Native</li>
+          <li>HTML5 / CSS3 / Bootstrap</li>
+          <li>MySQL / PostgreSQL</li>
+          <li>Figma / Adobe Illustrator / Photoshop</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="parallax-section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Computer Lab Assistant</h3>
+            <p><strong>University of Limpopo</strong> — March 2022 - Present</p>
+            <ul>
+              <li>Assisted students with technical support</li>
+              <li>Maintained lab equipment and software</li>
+              <li>Provided help with programming assignments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Master's in Computer Science</h3>
+            <p><strong>University of Limpopo</strong> — In Progress</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Honours in Computer Science</h3>
+            <p><strong>University of Limpopo</strong> — 2024</p>
+          </div>
+          <div class="col-md-6">
+            <h3>BSc in Mathematics and Computer Science</h3>
+            <p><strong>University of Limpopo</strong> — 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="col-md-6 animate-on-scroll">
+            <h3>Text Summarization for isiNdebele</h3>
+            <p><strong>Master's Project</strong> — A text summarization model for isiNdebele, an under-resourced language. The project leverages state-of-the-art NLP techniques to develop an efficient summarization tool.</p>
+          </div>
+          <div class="col-md-6 animate-on-scroll">
+            <h3>Portfolio Website</h3>
+            <p><strong>Hackathon 1: Portfolio Building</strong> — Developed a personal portfolio website using HTML, CSS, and JavaScript, showcasing my skills and projects.</p>
+          </div>
+          <div class="col-md-6 animate-on-scroll">
+            <h3>Premium Auto Body Repair & Mechanics Website</h3>
+            <p><strong>Freelance Project</strong> — Created a responsive business website using HTML and CSS for Premium Auto Body Repair & Mechanics. <br>Source Code: <a href="https://github.com/sadsax772/website-Seolwane.git" target="_blank">GitHub Repo</a></p>
+          </div>
+          <div class="col-md-6 animate-on-scroll">
+            <h3>Find My Doctor</h3>
+            <p><strong>Location-Based App</strong> — Developed a web-based project that helps users locate the nearest doctors based on their location. It integrates basic location tracking and intuitive UI to support healthcare accessibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hire" class="parallax-section">
+      <div class="container text-center">
+        <h2>Hire Me</h2>
+        <p>I’m available for freelance or remote work in:</p>
+        <ul>
+          <li>Web Application Development</li>
+          <li>Mobile App Development</li>
+          <li>Graphic Design & UI/UX</li>
+        </ul>
+        <a href="#contact" class="section-btn">Let's Work Together</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form action="https://formsubmit.co/cedricmohale071@outlook.com" method="POST" class="contact-form">
+          <input type="hidden" name="_next" value="thank-you.html">
+          <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+          </div>
+          <input type="submit" value="Send Message" class="btn btn-success" />
+        </form>
+      </div>
+    </section>
+
+    <section id="cv-socials">
+      <div class="container text-center">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/cedrics071" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/sadsax772" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="mailto:cedricmohale071@outlook.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/27817378562" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function startSite() {
+      document.getElementById("landing").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+    }
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
